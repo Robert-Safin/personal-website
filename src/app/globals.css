@@ -2,13 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .headerXl {
+    font-family: "SpaceGrotesk", sans-serif;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .headerL {
+    font-family: "SpaceGrotesk", sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .headerM {
+    font-family: "SpaceGrotesk", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .text {
+    font-family: "SpaceGrotesk", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    @apply font-extralight text-lightGray
+  }
+}
+
+@layer components {
+  .avatarBgGradient {
+    background: rgb(36,36,36);
+    background: linear-gradient(0deg, rgba(36,36,36,0.8393732492997199) 18%, rgba(36,36,36,0.1026785714285714) 51%);
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +69,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
