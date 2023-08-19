@@ -6,6 +6,7 @@ import { FC, useState } from "react";
 interface Props {
   image: string;
   title: string;
+  description: string;
   technologies: string[];
   liveLink: string;
   githubLink: string;
@@ -62,7 +63,7 @@ const ProjectCard: FC<Props> = (props) => {
       )}
 
       <h1 className="headerM uppercase my-4 line-clamp-1">{props.title}</h1>
-      <div className="flex flex-row space-x-2">
+      <div className="flex flex-row space-x-2 line-clamp-1">
         {props.technologies.map((technology) => {
           return (
             <p key={technology} className="text-lightGray uppercase">
@@ -71,6 +72,7 @@ const ProjectCard: FC<Props> = (props) => {
           );
         })}
       </div>
+        <p className="text text-white text-sm mt-4">{props.description}</p>
       <div className="flex space-x-8 mt-6 xl:hidden">
         <Link
           target="_blank"

@@ -26,14 +26,14 @@ const BackgroundPatterns: FC<Props> = (props) => {
           height={1}
           width={1}
           alt="something"
-          className="w-full relative left-1/2 top-[35%] transform md:scale-[75%] xl:scale-[50%]"
+          className="w-full relative left-1/2 top-[0%] transform md:scale-[75%] xl:scale-[50%]"
         />
         <Image
           src="/pattern-rings.svg"
           height={1}
           width={1}
           alt="something"
-          className="w-full relative right-1/2 top-[85%] transform md:scale-[75%] xl:scale-[50%]"
+          className="w-full relative right-1/2 top-[0%] transform md:scale-[75%] xl:scale-[50%]"
         />
       </div>
     </>

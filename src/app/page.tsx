@@ -10,41 +10,16 @@ import End from "./components/End";
 export default function Home() {
   return (
     <div className="mx-auto px-4 md:px-8 xl:px-20">
-
-
-
-<BackgroundPatterns/>
-
-
-
-
-      {/* {'first section'} */}
-
-        <Three />
-        <div className="border-b flex flex-col md:flex-row-reverse md:pb-20">
-          <Avatar />
-          <Greet />
-        </div>
-
-
-
-
-
-
-      {/* {'second section'} */}
+      <BackgroundPatterns />
+      <Three />
+      <div className="border-b flex flex-col md:flex-row-reverse md:pb-20">
+        <Avatar />
+        <Greet />
+      </div>
       <Skills />
-
-
-      {/* {'third section'} */}
-      <Projects/>
-
-
-
-       {/* {'forth section'} */}
-      <Contact/>
-      <End/>
-
-
+      <Projects />
+      <Contact />
+      <End />
     </div>
   );
 }
