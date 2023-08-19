@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html className='bg-black max-w-[1440px] mx-auto' lang="en">
-      <body>{children}</body>
+      <body className='w-full mx-auto'>{children}</body>
     </html>
   )
 }
