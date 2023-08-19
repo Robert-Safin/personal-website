@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        spaceGrotesk: ["SpaceGrotesk-VariableFont_wght"],
+        spaceGrotesk: ["Space Grotesk"],
       },
       colors: {
         black: '#151515',
