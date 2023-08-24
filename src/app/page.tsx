@@ -10,7 +10,7 @@ import End from "./components/End";
 export default function Home() {
   return (
     <div className="mx-auto px-4 md:px-8 xl:px-20">
-      <BackgroundPatterns />
+      {/* <BackgroundPatterns /> */}
       <Three />
       <div className="border-b flex flex-col md:flex-row-reverse md:pb-20">
         <Avatar />

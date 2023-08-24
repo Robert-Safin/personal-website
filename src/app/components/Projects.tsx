@@ -52,6 +52,27 @@ const Projects: FC = () => {
           liveLink="https://favolist-bice.vercel.app/"
           githubLink="https://github.com/Robert-Safin/favolist"
         />
+         <ProjectCard
+          images={[
+            // "/projects/link/link1.png",
+            "/projects/link/link2.png",
+            "/projects/link/link3.png",
+            "/projects/link/link4.png",
+
+          ]}
+          title="linkTo"
+          description="description"
+          technologies={[
+            "React",
+            "TypeScript",
+            "Next.js",
+            "TailwindCSS",
+            "PostgreSQL",
+            "Prisma",
+          ]}
+          liveLink="https://link-to-sigma.vercel.app/"
+          githubLink="https://github.com/Robert-Safin/linkTo"
+        />
       </div>
     </div>
   );
