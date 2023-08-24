@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
-
+import ImageCarousel from "./ImageCarousel";
 interface Props {
-  image: string;
+  images: string[];
   title: string;
   description: string;
   technologies: string[];
@@ -15,9 +15,7 @@ interface Props {
 const ProjectCard: FC<Props> = (props) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleHover = () => {
-    setIsHovered(!isHovered);
-  };
+
   return (
     <div
       className="flex flex-col"
@@ -25,23 +23,14 @@ const ProjectCard: FC<Props> = (props) => {
       onMouseEnter={() => setIsHovered(true)}
     >
       {!isHovered && (
-        <Image
-          className="w-full"
-          src={props.image}
-          alt={props.title}
-          width={10000}
-          height={10000}
-        />
+        <ImageCarousel photos={props.images} imageClasses="w-full object-cover h-[500px]" />
       )}
 
       {isHovered && (
         <div className="relative">
-          <Image
-            className="w-full opacity-50"
-            src={props.image}
-            alt={props.title}
-            width={10000}
-            height={10000}
+          <ImageCarousel
+            photos={props.images}
+            imageClasses="w-full opacity-50 object-cover h-[500px]"
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-20">
             <Link
@@ -72,7 +61,7 @@ const ProjectCard: FC<Props> = (props) => {
           );
         })}
       </div>
-        <p className="text text-white text-sm mt-4">{props.description}</p>
+      <p className="text text-white text-sm mt-4">{props.description}</p>
       <div className="flex space-x-8 mt-6 xl:hidden">
         <Link
           target="_blank"

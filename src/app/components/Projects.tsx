@@ -15,28 +15,42 @@ const Projects: FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ProjectCard
-          image="/projects/madu.webp"
+          images={[
+            "/projects/ale/ale1.png",
+            "/projects/ale/ale2.png",
+            "/projects/ale/ale3.png",
+          ]}
           title="Aletheia"
           description="description"
-          technologies={["React", "TypeScript", "Next.js", "TailwindCSS", "Prisma", 'MySQL']}
+          technologies={[
+            "React",
+            "TypeScript",
+            "Next.js",
+            "TailwindCSS",
+            "Prisma",
+            "MySQL",
+          ]}
           liveLink="https://aletheia2.vercel.app/"
           githubLink="https://github.com/Robert-Safin/aletheia2"
         />
         <ProjectCard
-          image="/projects/madu.webp"
+          images={[
+            "/projects/fav/fav1.png",
+            "/projects/fav/fav2.png",
+            "/projects/fav/fav3.png",
+          ]}
           title="Favolist"
           description="description"
-          technologies={["React", "TypeScript", "Next.js", "TailwindCSS", "MongoDB", 'Mongoose']}
+          technologies={[
+            "React",
+            "TypeScript",
+            "Next.js",
+            "TailwindCSS",
+            "MongoDB",
+            "Mongoose",
+          ]}
           liveLink="https://favolist-bice.vercel.app/"
           githubLink="https://github.com/Robert-Safin/favolist"
-        />
-        <ProjectCard
-          image="/projects/madu.webp"
-          title="Personal Website"
-          description="description"
-          technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
-          liveLink="/"
-          githubLink="https://github.com/Robert-Safin/personal-website"
         />
       </div>
     </div>
