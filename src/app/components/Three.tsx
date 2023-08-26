@@ -11,13 +11,11 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 export default function Three() {
   const [scrollSpeed, setScrollSpeed] = useState(1);
+
   useEffect(() => {
     const handleScroll = () => {
-      // Get the scroll position as a percentage (0 at top, 1 at bottom)
       const scrollPosition = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-
-      // Update the scroll speed. You can adjust the calculation here for desired effect.
-      setScrollSpeed(1 + scrollPosition * 2);  // 1 at top, 3 at bottom
+      setScrollSpeed(1 + scrollPosition * 2);
     };
 
     window.addEventListener('scroll', handleScroll);
