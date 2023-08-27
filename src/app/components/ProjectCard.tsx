@@ -10,6 +10,7 @@ interface Props {
   technologies: string[];
   liveLink: string;
   githubLink: string;
+  slideTimer: number;
 }
 
 const ProjectCard: FC<Props> = (props) => {
@@ -23,14 +24,15 @@ const ProjectCard: FC<Props> = (props) => {
       onMouseEnter={() => setIsHovered(true)}
     >
       {!isHovered && (
-        <ImageCarousel photos={props.images} imageClasses="w-full object-cover h-[500px]" />
+        <ImageCarousel slideTimer={props.slideTimer} photos={props.images} imageClasses="w-full object-cover h-[500px]" />
       )}
 
       {isHovered && (
         <div className="relative">
-          <ImageCarousel
+          <ImageCarousel slideTimer={props.slideTimer}
             photos={props.images}
             imageClasses="w-full opacity-50 object-cover h-[500px]"
+
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-20">
             <Link
