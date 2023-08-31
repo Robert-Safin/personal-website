@@ -13,17 +13,21 @@ const Greet = () => {
         className="headerM text-white mb-4 hidden md:block"
       />
       <h1 className="headerL text-white text-[40px] tracking-wide md:headerL xl:headerXl">
-        Nice to meet you! I`m <span className="xl:pt-4 no-underline border-b-4 border-green -pb-1 inline-block">
-          Robert Safin </span>
+        Nice to meet you! I`m{" "}
+        <span className="xl:pt-4 no-underline border-b-4 border-green -pb-1 inline-block">
+          Robert Safin{" "}
+        </span>
         .
       </h1>
       <p className="text text-white text-[16px] xl:w-full md:pr-4">
-        Currently based in Bali, Indonesia. I have 2 degrees from London
-        universities and experience working in real estate development and as an
-        oil and gas economist. I am now looking to transition into a career in
-        software development. I have attended a 3 month intensive coding
-        bootcamp `Le Wagon` and curently working and learning on my own projects.
-        I am now looking for a junior developer position.
+        I am an aspiring full-stack developer, focusing on react with Next.js. I
+        have 2 degrees from London universities and experience working in real
+        estate development and as an oil and gas economist. I am now looking to
+        transition into a career in software development. I have attended a 3
+        month intensive coding bootcamp `Le Wagon` and currently working and
+        learning on my own projects. I strife to write typesafe, maintainable
+        code as well as provide a great user experience. I am now looking for
+        remote work opportunities.
       </p>
       <Link href={"#contact"}>
         <p className="mt-20 hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green w-fit mx-auto pb-1 md:mx-0">

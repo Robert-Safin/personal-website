@@ -63,7 +63,7 @@ const ProjectCard: FC<Props> = (props) => {
           );
         })}
       </div>
-      <p className="text text-white text-sm mt-4">{props.description}</p>
+      <p className="text text-white text-sm mt-4 h-20 overflow-y-auto">{props.description}</p>
       <div className="flex space-x-8 mt-6 xl:hidden">
         <Link
           target="_blank"

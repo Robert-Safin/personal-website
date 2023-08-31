@@ -7,28 +7,28 @@ const Skills = () => {
       "
       >
         <div>
-          <h1 className="headerM md:headerL">HTML/CSS</h1>
-          <h2 className="text">Bootstrap Tailwind</h2>
-        </div>
-        <div>
-          <h1 className="headerM md:headerL">TypeScript</h1>
-          <h2 className="text">JavaScript</h2>
-        </div>
-        <div>
           <h1 className="headerM md:headerL">React</h1>
-          <h2 className="text">Next.js</h2>
+          <h2 className="text">Client / Server side</h2>
         </div>
         <div>
-          <h1 className="headerM md:headerL">Node</h1>
-          <h2 className="text">Express.js</h2>
+          <h1 className="headerM md:headerL">Full Stack</h1>
+          <h2 className="text">Next.js / Node</h2>
         </div>
         <div>
-          <h1 className="headerM md:headerL">Databases</h1>
-          <h2 className="text">Postgres MongoDB Prisma</h2>
+          <h1 className="headerM md:headerL">Typesafe</h1>
+          <h2 className="text">TypeScript / Prisma</h2>
         </div>
         <div>
-          <h1 className="headerM md:headerL">Ruby</h1>
-          <h2 className="text">Ruby on Rails</h2>
+          <h1 className="headerM md:headerL">Responsive Design</h1>
+          <h2 className="text">TailwindCSS</h2>
+        </div>
+        <div>
+          <h1 className="headerM md:headerL">SQL / NoSQL</h1>
+          <h2 className="text">PostgreSQL / MongoDB</h2>
+        </div>
+        <div>
+          <h1 className="headerM md:headerL">React Native</h1>
+          <h2 className="text">Expo</h2>
         </div>
       </div>
     </>

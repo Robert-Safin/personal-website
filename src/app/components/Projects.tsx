@@ -26,11 +26,11 @@ const Projects: FC = () => {
           promotions, which are then served to users based on their geographic
           coordinates. Business owners can set up 'recurring' or 'one time' activities
           such as 'happy hours every Friday' or 'discounted gym membership only this week'.
-          The ativities would propagate throught the database accordingly.
+          The activities would propagate thought the database accordingly.
           The app provides a sorted card view of all the activities in the area, as well as
           a map view with markers. Users can also search for specific activities or businesses.
-          The app implements various google APIs to colled and store data about businesses via thier
-          google Business ID. The app leverages cheaper MapBox API for the map view, as well as verious calculations
+          The app implements various google APIs to collect and store data about businesses via their
+          google Business ID. The app leverages cheaper MapBox API for the map view, as well as various calculations
           to determine the distance between the user and the business."
           technologies={[
             "React",
@@ -51,7 +51,12 @@ const Projects: FC = () => {
             "/projects/fav/fav3.png",
           ]}
           title="Product social media platform"
-          description="description"
+          description="'Favolist is a full stack social media type app. The app solves the problem of online reviews on
+          products- you can never trust the reviews, as these can be faked. Favolist allows users to create a list of say
+          their favorite tech gadgets and populate the list with products as well as their thoughts on the product, featuring
+          a Notion type editor. You can also plug your social media accounts and affiliate links and discount codes for the product.
+          The concept comes together as Favolist only shows you products/lists from people you follow and thus know or trust.
+          "
           technologies={[
             "React",
             "TypeScript",
@@ -71,7 +76,10 @@ const Projects: FC = () => {
             "/projects/link/link4.png",
           ]}
           title="Link sharing app"
-          description="description"
+          description="A full stack web app (similar to LinkTree) that allows users to create a profile and share links
+          to their social media accounts. The app features a highly responsive design, with a mobile first approach,
+          having a live preview when viewed on desktop. The app can quickly authenticate a user via OAuth powered by Clerk.
+          In the end, user can create their own unique link, which they can share with others."
           technologies={[
             "React",
             "TypeScript",
@@ -91,8 +99,10 @@ const Projects: FC = () => {
             "/projects/r3f/ref3.png",
             "/projects/r3f/ref4.png",
           ]}
-          title="React Three.Js Fiber Expo"
-          description="description"
+          title="3D website for a gallery"
+          description="A demo of React Three.js Fiber(R3F). The website features a 3D scene with implementation of dynamic shadows,
+          lights and camera movements in 3D space. The website is an example of curated user experience where a visitor is guided
+          through the information in a specific order."
           technologies={[
             "React",
             "Three.js",
