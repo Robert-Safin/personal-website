@@ -6,6 +6,7 @@ import { FiMail } from "react-icons/fi";
 import { ImProfile } from "react-icons/im";
 import Typed from "react-typed";
 
+
 const Avatar = () => {
   return (
     <div className="flex flex-col items-center avatarBgGradient w-fit mx-auto pt-6">
