@@ -17,7 +17,7 @@ const Avatar = () => {
         className="headerM text-white mb-4 md:hidden"
       />
       <div className="flex justify-evenly w-full md:mt-2">
-        <Link href="/CV-Eng.pdf" target="_blank">
+        <Link href="/CV-ENG.pdf" target="_blank">
           <ImProfile className="w-5 h-5 text-white  hover:text-green" />
         </Link>
         <Link href="https://github.com/Robert-Safin" target="_blank">
