@@ -14,49 +14,61 @@ const Projects: FC = () => {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <ProjectCard
-    images={[
-      "/projects/eco/eco1.png",
-      "/projects/eco/eco2.png",
-      "/projects/eco/eco3.png",
-    ]}
-    title="E-commerce platform"
-    description="E commerce website with integrated Redis server store, allowing for fast response times and
+        <ProjectCard
+          images={[
+            "/projects/qun/qun1.png",
+            "/projects/qun/qun2.png",
+            "/projects/qun/qun3.png",
+          ]}
+          title="Fintech Landing"
+          description="Landing page for a fintech. The page features a highly responsive design, with a mobile first approach, advanced layouts, styling and animations."
+          technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
+          liveLink="https://quant-woad.vercel.app/"
+          githubLink="https://github.com/Robert-Safin/quant"
+          slideTimer={5000}
+        />
+        <ProjectCard
+          images={[
+            "/projects/eco/eco1.png",
+            "/projects/eco/eco2.png",
+            "/projects/eco/eco3.png",
+          ]}
+          title="E-commerce platform"
+          description="E commerce website with integrated Redis server store, allowing for fast response times and
     a great user experience, cart memory. Featuring a highly responsive design, with a mobile first approach,
     "
-    technologies={[
-      "TailwindCSS",
-      "Redis",
-      "React",
-      "TypeScript",
-      "Next.js",
-    ]}
-    liveLink="https://ecom-six-alpha.vercel.app/"
-    githubLink="https://github.com/Robert-Safin/ecom"
-    slideTimer={5000}
-    />
-    <ProjectCard
-    images={[
-      "/projects/tre/tre1.png",
-      "/projects/tre/tre2.png",
-      "/projects/tre/tre3.png",
-    ]}
-    title="Headless Task Manager"
-    description="Trello type task manager done as a progressive web app, allowing for offline use and installation
+          technologies={[
+            "TailwindCSS",
+            "Redis",
+            "React",
+            "TypeScript",
+            "Next.js",
+          ]}
+          liveLink="https://ecom-six-alpha.vercel.app/"
+          githubLink="https://github.com/Robert-Safin/ecom"
+          slideTimer={5000}
+        />
+        <ProjectCard
+          images={[
+            "/projects/tre/tre1.png",
+            "/projects/tre/tre2.png",
+            "/projects/tre/tre3.png",
+          ]}
+          title="Headless Task Manager"
+          description="Trello type task manager done as a progressive web app, allowing for offline use and installation
     on mobile and desktop devices via the browser. The app features a highly responsive design, with a mobile first approach,
     light/dark theme. Powered by Redux Thunk for persistent state management."
-    liveLink="https://trello-pwa.vercel.app/"
-    githubLink="https://github.com/Robert-Safin/trello-pwa"
-    technologies={[
-      "Redux Thunk",
-      "PWA",
-      "React",
-      "TypeScript",
-      "Next.js",
-    ]}
-    slideTimer={5000}
-    />
-
+          liveLink="https://trello-pwa.vercel.app/"
+          githubLink="https://github.com/Robert-Safin/trello-pwa"
+          technologies={[
+            "Redux Thunk",
+            "PWA",
+            "React",
+            "TypeScript",
+            "Next.js",
+          ]}
+          slideTimer={5000}
+        />
 
         <ProjectCard
           images={[
