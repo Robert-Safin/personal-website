@@ -13,7 +13,7 @@ const Projects: FC = () => {
           </p>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         <ProjectCard
         images={[
           '/projects/sym/sym1.png',
@@ -25,7 +25,7 @@ const Projects: FC = () => {
         technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
         liveLink="https://symbobtic.vercel.app/"
         githubLink="https://github.com/Robert-Safin/symbobtic"
-        slideTimer={5000}
+        slideTimer={6000}
         />
         <ProjectCard
           images={[
@@ -38,7 +38,7 @@ const Projects: FC = () => {
           technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
           liveLink="https://quant-woad.vercel.app/"
           githubLink="https://github.com/Robert-Safin/quant"
-          slideTimer={5000}
+          slideTimer={7000}
         />
         <ProjectCard
           images={[
