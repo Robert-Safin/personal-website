@@ -15,6 +15,19 @@ const Projects: FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ProjectCard
+        images={[
+          '/projects/sym/sym1.png',
+          '/projects/sym/sym2.png',
+          '/projects/sym/sym3.png',
+        ]}
+        title="Design Agency Landing"
+        description="Landing page for a design agency. The page features a highly responsive design, with a mobile first approach, advanced layouts, styling and animations."
+        technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
+        liveLink="https://symbobtic.vercel.app/"
+        githubLink="https://github.com/Robert-Safin/symbobtic"
+        slideTimer={5000}
+        />
+        <ProjectCard
           images={[
             "/projects/qun/qun1.png",
             "/projects/qun/qun2.png",
