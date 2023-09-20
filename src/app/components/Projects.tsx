@@ -13,19 +13,18 @@ const Projects: FC = () => {
           </p>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         <ProjectCard
-        images={[
-          '/projects/sym/sym1.png',
-          '/projects/sym/sym2.png',
-          '/projects/sym/sym3.png',
-        ]}
-        title="Design Agency Landing"
-        description="Landing page for a design agency. The page features a highly responsive design, with a mobile first approach, advanced layouts, styling and animations."
-        technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
-        liveLink="https://symbobtic.vercel.app/"
-        githubLink="https://github.com/Robert-Safin/symbobtic"
-        slideTimer={6000}
+          images={[
+            "/projects/sym/sym1.png",
+            "/projects/sym/sym2.png",
+            "/projects/sym/sym3.png",
+          ]}
+          title="Design Agency Landing"
+          description="Landing page for a design agency. The page features a highly responsive design, with a mobile first approach, advanced layouts, styling and animations."
+          technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
+          liveLink="https://symbobtic.vercel.app/"
+          githubLink="https://github.com/Robert-Safin/symbobtic"
         />
         <ProjectCard
           images={[
@@ -38,7 +37,6 @@ const Projects: FC = () => {
           technologies={["React", "TypeScript", "Next.js", "TailwindCSS"]}
           liveLink="https://quant-woad.vercel.app/"
           githubLink="https://github.com/Robert-Safin/quant"
-          slideTimer={7000}
         />
         <ProjectCard
           images={[
@@ -59,7 +57,6 @@ const Projects: FC = () => {
           ]}
           liveLink="https://ecom-six-alpha.vercel.app/"
           githubLink="https://github.com/Robert-Safin/ecom"
-          slideTimer={5000}
         />
         <ProjectCard
           images={[
@@ -80,7 +77,6 @@ const Projects: FC = () => {
             "TypeScript",
             "Next.js",
           ]}
-          slideTimer={5000}
         />
 
         <ProjectCard
@@ -111,7 +107,6 @@ const Projects: FC = () => {
           ]}
           liveLink="https://aletheia2.vercel.app/"
           githubLink="https://github.com/Robert-Safin/aletheia2"
-          slideTimer={5000}
         />
         <ProjectCard
           images={[
@@ -136,7 +131,6 @@ const Projects: FC = () => {
           ]}
           liveLink="https://favolist-bice.vercel.app/"
           githubLink="https://github.com/Robert-Safin/favolist"
-          slideTimer={5000}
         />
         <ProjectCard
           images={[
@@ -159,7 +153,6 @@ const Projects: FC = () => {
           ]}
           liveLink="https://link-to-sigma.vercel.app/"
           githubLink="https://github.com/Robert-Safin/linkTo"
-          slideTimer={5000}
         />
         <ProjectCard
           images={[
@@ -182,7 +175,6 @@ const Projects: FC = () => {
           ]}
           liveLink="https://r3f-demo-tau.vercel.app/"
           githubLink="https://github.com/Robert-Safin/3D-site"
-          slideTimer={5000}
         />
       </div>
     </div>
