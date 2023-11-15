@@ -29,7 +29,7 @@ const Contact = async () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col xl:flex-row xl:justify-between bg-darkGray xl:px-32 xl:space-x-32 w-full xl:text-left text-center py-16 px-4">
+    <div id="contact" className="flex flex-col xl:flex-row xl:justify-between bg-darkGray xl:px-32 xl:space-x-32 w-full xl:text-left text-center py-16 px-4 mt-40">
       <div className="xl:w-1/2">
         <h1 className="headerL mb-8 tracking-widest">Contact</h1>
         <p className="text tracking-wide">
