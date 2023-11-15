@@ -12,7 +12,7 @@ interface Props {
 const ProjectCard: FC<Props> = (props) => {
 
   return (
-    <div className="h-[500px] md:h-[600px] xl:h-[700px]">
+    <div className="h-[550px] md:h-[600px] xl:h-[700px]">
       <h1 className="headerM mb-4">{props.name}</h1>
       <iframe
         src={props.url}
