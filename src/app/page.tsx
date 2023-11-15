@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import End from "./components/End";
+import Languages from "./components/Languages";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Greet />
       </div>
       <Skills />
+      <Languages/>
       <Projects />
       <Contact />
       <End />

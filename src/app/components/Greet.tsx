@@ -20,13 +20,11 @@ const Greet = () => {
         .
       </h1>
       <p className="text text-white text-[16px] xl:w-full md:pr-4">
-        I am a full-stack react developer. I have 2 degrees from London
-        universities and experience working in real estate development and as an
-        oil and gas economist. I have attended a 3 month intensive coding
-        bootcamp `Le Wagon`. I strife to write typesafe, maintainable, scalable
-        code as well as provide a great user experience all on the Edge network
-        to provide fastest response times. I am now looking for remote work
-        opportunities.
+        I am a full-stack react developer. I have a MSc in real estate development and a BSc in
+        economics from London universities. I have worked in oil & gas as well as
+        real estate development firms. After attending an intensive coding bootcamp, I have
+        switched careers. I provide full-stack web development services, with most modern tools and
+        technologies.
       </p>
       <Link href={"#contact"}>
         <p className="mt-20 hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green w-fit mx-auto pb-1 md:mx-0">

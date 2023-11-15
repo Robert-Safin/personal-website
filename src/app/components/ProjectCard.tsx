@@ -18,6 +18,7 @@ const ProjectCard: FC<Props> = (props) => {
         src={props.url}
         width="100%"
         height="100%"
+        className="rounded-xl"
       >
       </iframe>
       <div className="flex space-x-10 mt-4 lg:mt-8">
