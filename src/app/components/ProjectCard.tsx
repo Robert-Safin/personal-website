@@ -20,7 +20,7 @@ const ProjectCard: FC<Props> = (props) => {
         height="100%"
       >
       </iframe>
-      <div className="flex space-x-10 mt-4">
+      <div className="flex space-x-10 mt-4 lg:mt-8">
         <Link href={props.url} target="_blank" className="hover:text-green headerM text-white text-[18px] tracking-widest border-b-2 border-green w-fit pb-1 mx-0">Live link</Link>
         <Link href={props.github} target="_blank" className="hover:text-green headerM text-white text-[18px] tracking-widest border-b-2 border-green w-fit pb-1 mx-0">Github</Link>
       </div>

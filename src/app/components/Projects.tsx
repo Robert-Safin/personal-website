@@ -13,7 +13,7 @@ const Projects: FC = () => {
           </p>
         </Link>
       </div>
-      <div className="flex flex-col space-y-40 lg:space-x-60">
+      <div className="flex flex-col space-y-40 lg:space-y-60">
         <ProjectCard url="https://symbobtic.vercel.app/" name="Design studio website" github="https://github.com/Robert-Safin/symbobtic"/>
         <ProjectCard url="https://elysium-beta.vercel.app/" name="Gym website" github="https://github.com/Robert-Safin/elysium"/>
         <ProjectCard url="https://quant-woad.vercel.app/" name="DEX website" github="https://github.com/Robert-Safin/quant"/>
