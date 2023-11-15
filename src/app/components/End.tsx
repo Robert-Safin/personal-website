@@ -14,11 +14,11 @@ const End = () => {
           typeSpeed={40}
           backSpeed={40}
           loop
-          className="headerM text-white mb-4"
+          className="hidden  md:block headerM text-white mb-4"
         />
       </div>
 
-      <div className="flex space-x-6">
+      <div className="flex space-x-6 ">
         <Link href="/CV-Eng.pdf" target="_blank">
           <ImProfile className="w-5 h-5 text-white  hover:text-green" />
         </Link>
