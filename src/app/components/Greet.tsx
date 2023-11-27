@@ -12,14 +12,14 @@ const Greet = () => {
         loop
         className="headerM text-white mb-4 hidden md:block"
       />
-      <h1 className="headerL text-white text-[40px] tracking-wide md:headerL xl:headerXl">
+      <h1 className="headerL text-white text-[40px] tracking-wide md:headerL xl:headerXl xl:max-w-[800px] md:max-w-[450px]">
         Nice to meet you! I`m{" "}
         <span className="xl:pt-4 no-underline border-b-4 border-green -pb-1 inline-block">
           Robert Safin{" "}
         </span>
         .
       </h1>
-      <p className="text text-white text-[16px] xl:w-full md:pr-4">
+      <p className="text text-white text-[18px] xl:w-full md:pr-4 xl:max-w-[800px] md:max-w-[450px]">
         I am a full-stack react developer. I have a MSc in real estate development and a BSc in
         economics from London universities. I have worked in oil & gas as well as
         real estate development firms. After attending an intensive coding bootcamp, I have
