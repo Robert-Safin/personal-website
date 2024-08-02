@@ -4,6 +4,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { SiCsswizardry } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa6";
+import { FaPython } from "react-icons/fa";
 
 const Languages = () => {
   return (
@@ -27,6 +28,12 @@ const Languages = () => {
         <FaRust className="w-10 h-10 md:w-20 md:h-20 text-white mx-auto" />
         <p className="text text-center mt-1 md:mt-3">Rust</p>
       </div>
+
+      <div className="w-full ">
+        <FaPython className="w-10 h-10 md:w-20 md:h-20 text-white mx-auto" />
+        <p className="text text-center mt-1 md:mt-3">Python</p>
+      </div>
+
       <div className="w-full ">
         <SiCsswizardry className="w-10 h-10 md:w-20 md:h-20 text-white mx-auto" />
         <p className="text text-center mt-1 md:mt-3">CSS</p>

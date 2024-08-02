@@ -14,6 +14,9 @@ const Projects: FC = () => {
         </Link>
       </div>
       <div className="flex flex-col space-y-40 lg:space-y-60">
+        <ProjectCard url="https://atomic-systems-frontend.vercel.app/" name="Crypto Trading Platform" github="https://github.com/godin69/atomic-sys"/>
+        <ProjectCard url="https://gaes-k0c8l4wn4-gaes-web-s-team.vercel.app/" name="Airplane Maintenance & Repairs Company" github="https://github.com/gaesweb/gaes.ae"/>
+        <ProjectCard url="https://www.quanticotc.com/" name="Commodity Trading Company" github="https://github.com/Robert-Safin/quantico"/>
         <ProjectCard url="https://symbobtic.vercel.app/" name="Design studio website" github="https://github.com/Robert-Safin/symbobtic"/>
         <ProjectCard url="https://elysium-beta.vercel.app/" name="Gym website" github="https://github.com/Robert-Safin/elysium"/>
         <ProjectCard url="https://quant-woad.vercel.app/" name="DEX website" github="https://github.com/Robert-Safin/quant"/>
