@@ -3,17 +3,15 @@ import Link from "next/link";
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { ImProfile } from "react-icons/im";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 
 const End = () => {
   return (
     <div className="flex flex-row w-full bg-darkGray pb-14 items-center justify-between px-4 xl:px-32">
       <div>
-        <Typed
-          strings={["Robert Safin"]}
-          typeSpeed={40}
-          backSpeed={40}
-          loop
+        <TypeAnimation
+        sequence={["Robert Safin", 1000, "", 1000]}
+        repeat={Infinity}
           className="hidden  md:block headerM text-white mb-4"
         />
       </div>

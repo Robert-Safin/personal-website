@@ -1,15 +1,13 @@
 "use client";
 import Link from "next/link";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 
 const Greet = () => {
   return (
     <div className="text-center space-y-4 my-8 md:text-left md:pl-4 md:space-y-20 mx-auto w-full">
-      <Typed
-        strings={["Robert Safin"]}
-        typeSpeed={40}
-        backSpeed={40}
-        loop
+      <TypeAnimation
+        sequence={["Robert Safin", 1000, "", 1000]}
+        repeat={Infinity}
         className="headerM text-white mb-4 hidden md:block"
       />
       <h1 className="headerL text-white text-[40px] tracking-wide md:headerL xl:headerXl xl:max-w-[800px] md:max-w-[450px]">

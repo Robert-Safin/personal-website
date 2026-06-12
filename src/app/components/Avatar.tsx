@@ -4,17 +4,15 @@ import Link from "next/link";
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { ImProfile } from "react-icons/im";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 
 
 const Avatar = () => {
   return (
     <div className="flex flex-col items-center avatarBgGradient w-fit mx-auto pt-6">
-      <Typed
-        strings={["Robert Safin"]}
-        typeSpeed={40}
-        backSpeed={40}
-        loop
+      <TypeAnimation
+        sequence={["Robert Safin", 1000, "", 1000]}
+        repeat={Infinity}
         className="headerM text-white mb-4 md:hidden"
       />
       <div className="flex justify-evenly w-full md:mt-2">
