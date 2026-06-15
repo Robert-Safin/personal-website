@@ -19,10 +19,16 @@ const Greet = () => {
       </h1>
       <p className="text text-white text-[18px] xl:w-full md:pr-4 xl:max-w-[800px] md:max-w-[450px]">
         I am a full-stack developer, currently a lead teacher at{" "}
-        <a href="https://www.lewagon.com/" target="_blank" className="text-red underline underline">
+        <a
+          href="https://www.lewagon.com/"
+          target="_blank"
+          className="text-green underline"
+        >
           Le Wagon
         </a>{" "}
-        in Bali for AI Software course.
+        in Bali for AI Software course. I have master's degrees in Economics and
+        Real Estate development from London. I am open for freelance projects,
+        get in touch. I have a disgner and a data scientist on retiainer.
       </p>
       {/* <Link href={"#contact"}>
         <p className="mt-20 hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green w-fit mx-auto pb-1 md:mx-0">

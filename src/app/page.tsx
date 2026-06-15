@@ -2,7 +2,7 @@ import BackgroundPatterns from "./components/BackgroundPatterns";
 import Avatar from "./components/Avatar";
 import Greet from "./components/Greet";
 import Three from "./components/Three";
-import Skills from "./components/Skills";
+import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import End from "./components/End";
@@ -19,14 +19,17 @@ export default function Home() {
         <Avatar />
         <Greet />
       </div>
-      <Skills />
+      <Services />
       <Languages />
       <Projects />
       {/* <Contact /> */}
       {/* <End /> */}
       <div className="">
-        <Link href="#top" className="text-red fixed bottom-2 right-2 md:bottom-6 md:right-6">
-        <FaArrowAltCircleUp className="w-14 h-14 md:w-18 md:h-18"/>
+        <Link
+          href="#top"
+          className="text-red fixed bottom-2 right-2 md:bottom-6 md:right-6 animate-pulse"
+        >
+          <FaArrowAltCircleUp className="w-14 h-14 md:w-18 md:h-18 text-green text-opacity-[65%]" />
         </Link>
       </div>
     </div>

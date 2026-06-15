@@ -15,15 +15,15 @@ const Avatar = () => {
         className="headerM text-white mb-4 md:hidden"
       />
       <div className="flex justify-evenly w-full md:mt-2">
-        <Link href="/CV-ENG.pdf" target="_blank">
+        {/* <Link href="/CV-ENG.pdf" target="_blank">
           <ImProfile className="w-5 h-5 text-white  hover:text-green" />
-        </Link>
+        </Link> */}
         <Link href="https://github.com/Robert-Safin" target="_blank">
           <BsGithub className="w-5 h-5 text-white  hover:text-green" />
         </Link>
-        <Link href="https://www.linkedin.com/in/robert-safin/" target="_blank">
+        {/* <Link href="https://www.linkedin.com/in/robert-safin/" target="_blank">
           <BsLinkedin className="w-5 h-5 text-white  hover:text-green" />
-        </Link>
+        </Link> */}
         <Link
           href="https://wa.me/79670429889"
           target="_blank"

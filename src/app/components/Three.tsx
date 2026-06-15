@@ -18,7 +18,7 @@ export default function Three() {
       const delta = window.scrollY - lastScrollY.current;
       lastScrollY.current = window.scrollY;
       // Add the scroll delta into the velocity so fast scrolling spins faster.
-      velocity.current += delta * 0.00005;
+      velocity.current += delta * 0.00002;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -62,8 +62,8 @@ function FloatingTexts(props: any) {
       <group ref={ref}>
         <Billboard position={[-0.5, 0.4, 0.2]}>
           <Text
-            fontSize={0.06}
-            color="#393939"
+            fontSize={0.04}
+            color="#2a5741"
             anchorX="center"
             anchorY="middle"
             textAlign="center"
@@ -74,8 +74,8 @@ function FloatingTexts(props: any) {
 
         <Billboard position={[0.5, -0.4, -0.2]}>
           <Text
-            fontSize={0.06}
-            color="#525252"
+            fontSize={0.04}
+            color="#2c5746"
             anchorX="center"
             anchorY="middle"
             textAlign="center"
