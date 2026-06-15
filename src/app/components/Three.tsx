@@ -5,16 +5,6 @@ import { Points, PointMaterial, Text, Billboard } from "@react-three/drei";
 //@ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
-// Turn the flat Float32Array of [x,y,z,x,y,z,...] into [[x,y,z], ...] so we
-// can render one label per point.
-function toPoints(arr: Float32Array): [number, number, number][] {
-  const out: [number, number, number][] = [];
-  for (let i = 0; i < arr.length; i += 3) {
-    out.push([arr[i], arr[i + 1], arr[i + 2]]);
-  }
-  return out;
-}
-
 export default function Three() {
   // Current scroll-driven velocity. Mutated imperatively so it never triggers
   // re-renders; the useFrame loops read .current every frame.
@@ -52,7 +42,49 @@ export default function Three() {
     >
       <Stars velocity={velocity} />
       <Stars2 velocity={velocity} />
+      <FloatingTexts velocity={velocity} />
     </Canvas>
+  );
+}
+
+function FloatingTexts(props: any) {
+  const ref = useRef<any>(null);
+
+  useFrame(() => {
+    const v = props.velocity.current;
+    // Same rotation as the starfield so the labels orbit along with it.
+    ref.current!.rotation.x -= v;
+    ref.current!.rotation.y -= v * 0.66;
+  });
+
+  return (
+    <group rotation={[0, 0, Math.PI / 4]}>
+      <group ref={ref}>
+        <Billboard position={[-0.5, 0.4, 0.2]}>
+          <Text
+            fontSize={0.06}
+            color="#393939"
+            anchorX="center"
+            anchorY="middle"
+            textAlign="center"
+          >
+            {"vim btw"}
+          </Text>
+        </Billboard>
+
+        <Billboard position={[0.5, -0.4, -0.2]}>
+          <Text
+            fontSize={0.06}
+            color="#525252"
+            anchorX="center"
+            anchorY="middle"
+            textAlign="center"
+          >
+            {"arch btw"}
+          </Text>
+        </Billboard>
+      </group>
+    </group>
   );
 }
 
@@ -61,7 +93,6 @@ function Stars(props: any) {
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(300), { radius: 1.5 }),
   );
-  const [points] = useState(() => toPoints(sphere));
 
   useFrame((state, delta) => {
     const v = props.velocity.current;
@@ -74,7 +105,6 @@ function Stars(props: any) {
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      {/* ref moved to this wrapping group so points AND labels rotate together */}
       <group ref={ref}>
         <Points positions={sphere} stride={3} frustumCulled={false}>
           <PointMaterial
@@ -85,19 +115,6 @@ function Stars(props: any) {
             depthWrite={false}
           />
         </Points>
-        {points.map((p, i) => (
-          <Billboard key={i} position={p}>
-            <Text
-              fontSize={0.01}
-              color="#393939"
-              anchorX="center"
-              anchorY="middle"
-              textAlign="center"
-            >
-              {"I use\nVim btw"}
-            </Text>
-          </Billboard>
-        ))}
       </group>
     </group>
   );
@@ -108,7 +125,6 @@ function Stars2(props: any) {
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(300), { radius: 1.5 }),
   );
-  const [points] = useState(() => toPoints(sphere));
 
   useFrame(() => {
     const v = props.velocity.current;
@@ -119,7 +135,6 @@ function Stars2(props: any) {
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      {/* ref moved to this wrapping group so points AND labels rotate together */}
       <group ref={ref}>
         <Points positions={sphere} stride={3} frustumCulled={false}>
           <PointMaterial
@@ -130,19 +145,6 @@ function Stars2(props: any) {
             depthWrite={false}
           />
         </Points>
-        {points.map((p, i) => (
-          <Billboard key={i} position={p}>
-            <Text
-              fontSize={0.01}
-              color="#525252"
-              anchorX="center"
-              anchorY="middle"
-              textAlign="center"
-            >
-              {"I use\narch btw"}
-            </Text>
-          </Billboard>
-        ))}
       </group>
     </group>
   );
