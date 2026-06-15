@@ -18,18 +18,17 @@ const Greet = () => {
         .
       </h1>
       <p className="text text-white text-[18px] xl:w-full md:pr-4 xl:max-w-[800px] md:max-w-[450px]">
-        I am a full-stack next.js developer, specializing in advanced react
-        front-ends. I provide full-stack web development services, with most
-        modern tools and technologies. I have a MSc in real estate development
-        and a BSc in economics from London universities. I have worked in oil &
-        gas as well as real estate development firms. After attending an
-        intensive coding bootcamp, I have switched careers.
+        I am a full-stack developer, currently a lead teacher at{" "}
+        <a href="https://www.lewagon.com/" target="_blank" className="text-red underline underline">
+          Le Wagon
+        </a>{" "}
+        in Bali for AI Software course.
       </p>
-      <Link href={"#contact"}>
+      {/* <Link href={"#contact"}>
         <p className="mt-20 hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green w-fit mx-auto pb-1 md:mx-0">
           CONTACT ME
         </p>
-      </Link>
+      </Link> */}
     </div>
   );
 };

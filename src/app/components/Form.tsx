@@ -97,14 +97,20 @@ const Form: FC<Props> = (props) => {
         <p className="text-red text-[12px]">{messageErrorMessage}</p>
       )}
 
-      {!send && <div className="flex justify-end">
-        <button className="hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green pb-1 w-fit">
-          SEND MESSAGE
-        </button>
-      </div>}
-      {send && <div>
-        <p className="text-green text-[12px] text-right text-2xl tracking-widest">Message sent!</p>
-      </div> }
+      {!send && (
+        <div className="flex justify-end">
+          <button className="hover:text-green headerM text-white text-[16px] tracking-widest border-b-2 border-green pb-1 w-fit">
+            SEND MESSAGE
+          </button>
+        </div>
+      )}
+      {send && (
+        <div>
+          <p className="text-green text-[12px] text-right text-2xl tracking-widest">
+            Message sent!
+          </p>
+        </div>
+      )}
     </form>
   );
 };

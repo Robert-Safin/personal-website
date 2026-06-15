@@ -10,8 +10,8 @@ const End = () => {
     <div className="flex flex-row w-full bg-darkGray pb-14 items-center justify-between px-4 xl:px-32">
       <div>
         <TypeAnimation
-        sequence={["Robert Safin", 1000, "", 1000]}
-        repeat={Infinity}
+          sequence={["Robert Safin", 1000, "", 1000]}
+          repeat={Infinity}
           className="hidden  md:block headerM text-white mb-4"
         />
       </div>
